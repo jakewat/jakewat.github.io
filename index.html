@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">	
+		<title>Layout</title>
+		<meta name="robots" content="index, follow, noodp, noydir">
+		<meta name="description" content="The page description goes here." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--[if lt IE 9]>
+    		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="styles.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="responsiveslides.js"></script>
+		
+	</head>
+
+		<body>
+			<h1> Samuel Fortes </h1>
+
+			<nav>
+				<ul>
+					<li><a href="#">Main</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+			</nav>
+
+			<nav class="nav-collapse">
+
+			<div class="rslides-container">
+
+				<ul class="rslides">
+					<li><a href="#"><img src="images/ski1.jpg" alt="ski1"></a></li>
+					<li><a href="#"><img src="images/ski2.jpg" alt="ski2"></a></li>
+					<li><a href="#"><img src="images/ski3.jpg" alt="ski3"></a></li>
+					<li><a href="#"><img src="images/ski4.jpg" alt="ski4"></a></li>
+					<li><a href="#"><img src="images/ski5.jpg" alt="ski5"></a></li>
+				</ul>
+			</div> <!-- rslides-container -->
+
+		</nav>
+
+		    <script>
+      			var navigation = responsiveNav(".nav-collapse");
+    		</script>
+
+				<script>
+				
+		$(function() {
+    		$(".rslides").responsiveSlides({
+                auto: true,             // Boolean: Animate automatically, true or false
+                speed: 1200,            // Integer: Speed of the transition, in milliseconds
+                timeout: 4800,          // Integer: Time between slide transitions, in milliseconds
+                pager: true,            // Boolean: Show pager, true or false
+                nav: true,              // Boolean: Show navigation, true or false
+                random: false,          // Boolean: Randomize the order of the slides, true or false
+                pause: false,           // Boolean: Pause on hover, true or false
+                pauseControls: false,   // Boolean: Pause when hovering controls, true or false
+                prevText: '&#8592;',    // String: Text for the "previous" button
+                nextText: '&#8594;',    // String: Text for the "next" button
+                maxwidth: '',           // Integer: Max-width of the slideshow, in pixels
+                navContainer: '',       // Selector: Where auto generated controls should be appended to, default is after the <ul>
+                manualControls: '',     // Selector: Declare custom pager navigation
+                namespace: 'rslides',   // String: change the default namespace used
+                before: function () {}, // Function: Before callback
+                after: function () {}   // Function: After callback
+        	});
+  		});
+
+	</script>
+
+		</body>

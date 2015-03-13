@@ -1,0 +1,68 @@
+/*
+
+Author: Jake
+
+*/
+body {
+	background-image: url("images/dark_embroidery.png");
+}
+
+h1 {
+	font-size: 24px;
+	font-family: "Brush Script STD", Helvetica, sans-serif;
+	color: orange;
+	font-weight: 200;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+/* Navigation
+--------------------------------------*/
+
+nav ul {
+	padding: 0;
+
+
+}
+
+nav ul li {
+	list-style: none;
+	background-color: darkgrey;
+ 	border-top: 1px solid black;
+ 	text-align: center;
+}
+
+nav ul li:hover {
+	background: orange;
+
+}
+
+nav ul li a {
+	font-size: 16px;
+	font-family: "Times New Roman", "Hoefler Text", serif;
+	letter-spacing: 1px;
+	color: black;
+	text-decoration: none;
+	padding: 1em 0;
+	display: block;
+
+}
+
+/* Media Queries
+------------------------------------------*/
+
+@media screen and (min-width: 800px) {
+
+	nav {
+		
+	}
+	nav ul li {
+		float: left;
+		width: 19.8%;
+		border-right:1px solid black;
+	}
+
+	nav ul li:nth-child(1) {
+		border-left: 1px solid black;
+
+	}
+}
